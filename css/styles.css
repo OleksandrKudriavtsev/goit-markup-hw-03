@@ -9,8 +9,36 @@
   --txt-grey: rgba(255, 255, 255, 0.6);
   --borderline: #ececec;
 }
+/*===== basic reset =====*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-/* links-n-buttons */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+/* =====links-n-buttons-n-containers===== */
 .link,
 .header-link,
 .footer-link,
@@ -57,6 +85,8 @@
 }
 
 .btn {
+  padding: 6px 22px 6px 22px; /*padding не работает*/
+  min-width: 73px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -88,27 +118,25 @@
   border-radius: 4px;
 }
 
-.btn-sizing-one {
-  width: 73px;
-  height: 38px;
+/* ===== global page container ===== */
+.global-container {
+  width: 1600px;
 }
 
-.btn-sizing-two {
-  width: 130px;
-  height: 38px;
+/* ===== content container ===== */
+.content-container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px 0 15px;
 }
 
-.btn-sizing-three {
-  width: 145px;
-  height: 38px;
+/*===== main  section container =====*/
+.section {
+  padding: 94px 0;
 }
 
-.btn-sizing-four {
-  width: 103px;
-  height: 38px;
-}
-
-/* hidden-n-special-logo*/
+/* ===== hidden-n-special-logo =====*/
 .hidden {
   display: none;
 }
@@ -126,13 +154,15 @@
   color: var(--txt-blue);
 }
 
-/* body */
-li {
-  list-style-type: none;
-}
-
+/* ===== header ===== */
 .header-section {
   background: var(--background-header-n-photo);
+  margin-top: 40px;
+}
+
+/* ===== body section ===== */
+li {
+  list-style-type: none;
 }
 
 .main {
@@ -188,6 +218,7 @@ li {
   color: var(--txt-header-mail-n-phone-n-phototxt);
 }
 
+/* =====  portfolio page main ===== */
 .portfolio-pic-names {
   color: var(--txt-black);
   font-weight: bold;
@@ -202,6 +233,7 @@ li {
   line-height: 1.9;
 }
 
+/*===== footer section =====*/
 .footer-section {
   background: var(--background-dark);
 }
