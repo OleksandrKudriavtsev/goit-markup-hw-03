@@ -8,6 +8,7 @@
   --txt-black: #212121;
   --txt-grey: rgba(255, 255, 255, 0.6);
   --borderline: #ececec;
+  --blue-btn-hover: 188ce8;
 }
 /* ====== basic reset ====== */
 *,
@@ -113,8 +114,7 @@ img {
 }
 
 .btn-blue {
-  width: 200px;
-  height: 50px;
+  padding: 10px 32px;
   border: none;
   font-weight: bold;
   font-size: 16px;
@@ -123,15 +123,18 @@ img {
   border-radius: 4px;
 }
 
+.btn-blue:hover {
+  background-color: var(--blue-btn-hover);
+}
+
 /* ====== global page container ====== */
 .global-container {
   width: 1600px;
 }
 
 /* ====== content container ====== */
-.content-container {
+.container {
   width: 1200px;
-  margin-left: 215px;
   padding: 0 15px 0 15px;
 }
 
@@ -169,11 +172,12 @@ img {
 .header-section {
   display: flex;
   align-items: center;
-  width: 1200px;
+  /*width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 25px;
+  padding-bottom: 25px;*/
   border-bottom: 1px solid var(--borderline);
+  margin-left: 200px;
 }
 
 .header-non-logo-div {
@@ -206,6 +210,11 @@ li {
 
 .main {
   background: var(--background-light);
+}
+
+.main-portfolio {
+  background: var(--background-light);
+  margin-left: 200px;
 }
 
 .hero-section {
@@ -246,8 +255,13 @@ li {
   line-height: 1.7;
 }
 
+.studio-central-div {
+  margin-left: 200px;
+}
+
 .central-info-list {
   display: flex;
+  padding-top: 94px;
 }
 
 .central-info-list-heading {
@@ -289,20 +303,27 @@ li {
 
 .team-list-pic {
   margin-right: 30px;
+  background-color: var(--background-header-n-photo);
+  border-radius: 6px;
 }
 
 .team-list-pic:last-child {
   margin-right: 0px;
 }
+
 .team-names {
   color: var(--txt-black);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  padding-top: 30px;
+  text-align: center;
 }
 
 .team-proffesion {
   color: var(--txt-header-mail-n-phone-n-phototxt);
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 /* =====  portfolio page main ===== */
@@ -317,6 +338,10 @@ li {
   text-align: start;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.portfolio-pics-last {
+  margin-right: 0;
 }
 
 .portfolio-pic-names-descr {
