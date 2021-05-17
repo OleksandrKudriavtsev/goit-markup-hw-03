@@ -8,7 +8,7 @@
   --txt-black: #212121;
   --txt-grey: rgba(255, 255, 255, 0.6);
   --borderline: #ececec;
-  --blue-btn-hover: 188ce8;
+  --blue-btn-hover: #188ce8;
 }
 /* ======= basic reset ======= */
 *,
@@ -85,18 +85,22 @@ a {
   font-style: normal;
   line-height: 1.71;
   color: var(--background-header-n-photo);
+  margin-bottom: 9px;
 }
 
 .footer-adress-link-grey {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
 }
 
 .header-links:hover,
+.header-links-grey:hover,
 .footer-adress-link:hover,
 .footer-adress-link-grey:hover,
 .header-links:active,
+.header-links-grey:active,
 .footer-adress-link:active,
 .footer-adress-link-grey:active {
   color: var(--txt-blue);
@@ -109,11 +113,15 @@ a {
   border: none;
   padding: 10px 32px;
   color: var(--background-header-n-photo);
-  font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   font-weight: bold;
+}
+
+.btn-hero:hover,
+.btn-hero-active {
+  background: var(--blue-btn-hover);
 }
 
 .btn {
@@ -361,6 +369,8 @@ a {
 /* ======= footer ======= */
 
 .footer-adress-list {
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
   margin-bottom: 9px;
 }
