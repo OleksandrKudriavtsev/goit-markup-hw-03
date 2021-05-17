@@ -33,6 +33,7 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style: none;
 }
 
 img {
@@ -141,15 +142,13 @@ a {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.special-section {
-  padding-top: 94px;
 }
 
 .header-section {
@@ -160,8 +159,6 @@ a {
 
 .header-flex {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .footer-section {
@@ -169,7 +166,6 @@ a {
 }
 
 .footer-content {
-  margin-left: 200px;
   padding-top: 60px;
 }
 
@@ -201,7 +197,6 @@ a {
 /*изменить, когда будет фон*/
 .hero-section {
   background: var(--background-dark);
-  width: 1600px;
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -230,13 +225,9 @@ a {
 .studio-list-section {
   font-weight: bold;
   line-height: 1.14;
+  margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--txt-black);
-}
-
-.central-section {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .studio-list-section-desr {
@@ -250,11 +241,12 @@ a {
   line-height: 1.16;
   color: var(-txt-black);
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .studio-central-info-list {
   display: flex;
+  margin-bottom: 94px;
 }
 
 .studio-central-info-item {
@@ -266,10 +258,6 @@ a {
   margin-right: 0;
 }
 
-.studio-photo-container {
-  margin-left: 200px;
-}
-
 .studio-photo-list {
   list-style: none;
   display: flex;
@@ -278,10 +266,6 @@ a {
 
 .team-section {
   background-color: var(--backgound-grey);
-}
-
-.team-section-justify {
-  margin-left: 200px;
 }
 
 .studio-team-list {
@@ -302,7 +286,6 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  padding-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -310,6 +293,10 @@ a {
 .team-proffesion {
   color: var(--txt-header-mail-n-phone-n-phototxt);
   text-align: center;
+}
+
+.studio-team-descr-div {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -329,27 +316,26 @@ a {
   margin-right: 8px;
 }
 
-.portfolio-nav-btn-container {
-  margin-left: 200px;
-}
-
 .portfolio-gallery {
-  padding-top: 50px;
-  margin-left: 200px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
+  /*только при работающем flex-basis*/
+  margin-right: -30px;
 }
 
 .portfolio-pics {
-  display: inline-block;
   text-align: start;
   margin-right: 30px;
   margin-bottom: 30px;
+  flex-basis: calc((100% - 90px) / 3);
 }
 
+/* только если не работает flex-basis
 .portfolio-pics-last {
   margin-right: 0;
-}
+  */
 
 .portfolio-pic-names-descr {
   border-left: 1px solid var(--borderline);
