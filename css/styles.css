@@ -159,6 +159,11 @@ a {
   padding-bottom: 94px;
 }
 
+/* компенсируем два паддинга*/
+.special-section {
+  padding-top: 94px;
+}
+
 .header-section {
   display: flex;
   align-items: center;
@@ -171,10 +176,7 @@ a {
 
 .footer-section {
   background-color: var(--background-dark);
-}
-
-.footer-content {
-  padding-top: 60px;
+  padding: 60px 0;
 }
 
 /* ======= header ======= */
@@ -187,13 +189,13 @@ a {
 .header-nav-list {
   display: flex;
   align-items: center;
-  padding: 32px 0;
   margin-left: inherit;
 }
 
 .nav-list-item {
   margin-right: 50px;
   list-style: none;
+  padding: 32px 0;
 }
 
 .nav-list-item:last-child {
@@ -231,8 +233,9 @@ a {
 }
 
 .studio-list-section {
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.14;
+  font-size: 14px;
   margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--txt-black);
@@ -254,12 +257,12 @@ a {
 
 .studio-central-info-list {
   display: flex;
-  margin-bottom: 94px;
 }
 
 .studio-central-info-item {
   list-style: none;
   margin-right: 30px;
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .studio-central-info-item:last-child {
@@ -331,6 +334,7 @@ a {
   list-style: none;
   /*только при работающем flex-basis*/
   margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .portfolio-pics {
@@ -377,5 +381,4 @@ a {
 
 .footer-adress-list:last-child {
   margin-bottom: 0px;
-  padding-bottom: 60px;
 }
